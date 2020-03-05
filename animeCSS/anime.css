@@ -1,0 +1,39 @@
+.txt {
+  position: relative;
+  color: deeppink;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.txt2 {
+  position: relative;
+  color: pink;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#id1 {
+  position: relative;
+  color: hotpink;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.row {
+  height: 45px;
+  margin: 5px;
+}
+
+.row1 {
+  height: 45px;
+  background-color: antiquewhite;
+  margin: 5px;
+}
+
+.row3 {
+  margin: 5px;
+}
+
+.image {
+  opacity: 0.95;
+}

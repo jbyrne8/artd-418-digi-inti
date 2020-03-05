@@ -1,0 +1,39 @@
+hr {
+  border-top: 10px solid yellow;
+} /**isn't working**/
+
+}
+img {
+  max-width: 100%;
+}
+
+div.fixed {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 50px;
+  bottom: 100;
+  right: 100;
+  width: 500px;
+  z-index: 1;
+}
+
+div.fixed2 {
+  position: absolute;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  z-index: 2;
+}
+
+.container {
+  vertical-align: middle;
+  padding-top: 30px;
+  position: relative;
+}
+
+div.col {
+  opacity: 0.3;
+  max-width: 330px;
+}

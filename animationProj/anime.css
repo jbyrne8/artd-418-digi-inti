@@ -1,0 +1,18 @@
+body {
+  height: 14000px; /* Used to enable scrolling */
+  background: linear-gradient(150deg, #a8ff78, #78ffd6, #ffffff, #ff73de);
+}
+
+.container {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin: -300px 0 0 -640px;
+   size: 100%;
+}
+
+img {
+  position: absolute;
+  top: 13675px;
+  height: 300px;
+}

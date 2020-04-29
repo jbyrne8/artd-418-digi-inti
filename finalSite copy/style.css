@@ -1,0 +1,187 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.child{
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+body {
+  height: 10000px;
+  width: 100%;
+}
+
+p{
+  font-family: monotype-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+.ques{
+  font-family: monotype-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9em;
+  letter-spacing: 2.5px;
+  padding: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+  background-size: cover;
+}
+
+hr{
+  height: 1px;
+  color: black;
+  background-color: black;
+  border: none;
+}
+
+svg {
+  position: fixed;
+  top: -90px;
+  z-index: 999;
+}
+
+a{
+  padding-top: 4%;
+  display: inline;
+  color: black !important;
+  text-align: center;
+  padding-right: 35px;
+  padding-left: 35px;
+  font-family: monotype-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+  background: transparent;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar-nav > li{
+  padding-bottom: 3%;
+  display: inline;
+  color: black !important;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: monotype-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  background: transparent;
+  /* text-shadow: 1px 1px 1px black; */
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a:hover {
+  color: black;
+}
+
+.flex-start {
+  position: absolute;
+  padding-top: 7%;
+  padding-left: 4%;
+}
+
+.p1 {
+  font-family: bookmania, serif;
+  font-weight: 600;
+  font-style: italic;
+  color: black;
+  line-height: 110%;
+}
+
+.p2 {
+  font-family: bookmania, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+  line-height: 110%;
+}
+.p3{
+  padding-top: 25%;
+  font-family: monotype-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+  color: white;
+}
+
+.name {
+  text-align: left;
+  /*background-size: 1px 2em;
+  box-shadow:
+    inset 0 -0.15em #ffcc99,
+    inset 0 -0.2em white;
+  display: inline-block;*/
+  font-family: bookmania, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+  line-height: 110%;
+  padding-top: 10%;
+}
+
+#Taylor {
+  background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+  padding-top: 2%;
+}
+
+#info {
+  text-align: left;
+  padding-left: 9%;
+}
+
+#imcol{
+  text-align: right;
+}
+
+#imgt1 {
+  width: 100%;
+  max-width: 600px;
+  outline: 1px solid black;
+  padding-right: 10%;
+}
+
+
+/*.photoOverlap{
+  position: relative;
+  bottom: 150px;
+  left: 750px;
+  z-index: 999;
+}*/

@@ -1,0 +1,394 @@
+html {
+     scroll-snap-type: y mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
+}
+
+svg {
+  z-index: 500;
+}
+
+/* #stroke{
+  outline: 0.001px solid black;
+} */
+
+p {
+    font-family: monotype-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+.ques {
+    font-family: monotype-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    letter-spacing: 2.5px;
+    padding: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+    background-size: cover;
+}
+
+a {
+    color: black !important;
+    text-align: center;x
+    font-family: monotype-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    position: relative;
+    text-decoration: none;
+}
+#navvie{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 2vh;
+}
+.navbar-nav>li {
+    display: inline;
+    color: black !important;
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-family: monotype-grotesque, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    /* text-shadow: 0.3px 0.3px 0.3px white; */
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+a:hover {
+    color: black;
+}
+
+.p1 {
+    font-family: bookmania, serif;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    line-height: 110%;
+    padding-top: 20vh;
+    padding-left: 8vh;
+}
+
+.p2 {
+    font-family: bookmania, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    line-height: 110%;
+    padding-left: 8vh;
+}
+
+.p3 {
+    padding-top: 6vh;
+    font-family: monotype-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    color: white;
+    padding-left: 9vh;
+}
+
+.name {
+    text-align: left;
+    /*background-size: 1px 2em;
+  box-shadow:
+    inset 0 -0.15em #ffcc99,
+    inset 0 -0.2em white;
+  display: inline-block;*/
+    font-family: bookmania, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    line-height: 110%;
+    padding-top: 10%;
+}
+
+#Taylor {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* position: absolute; */
+    min-width: 100%;
+    z-index: 1;
+    padding-top: 20%;
+    max-height: 1900px;
+}
+
+#info {
+    text-align: left;
+    padding-left: 9%;
+    padding-top: 5%;
+}
+
+#imgcol{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8%;
+}
+
+#imgt1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 10;
+}
+
+.rectangle1{
+    width: 598px;
+    height: 898px;
+    outline: 1px solid black;
+    background: white;
+    position: relative;
+    z-index: 0;
+    bottom: 97.2em;
+    left: 7.1em;
+}
+
+#imgt2 {
+    object-fit: cover;
+    object-position: 40% 0;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 10;
+}
+
+.rectangle2{
+    width: 598px;
+    height: 598px;
+    outline: 1px solid black;
+    background: white;
+    position: relative;
+    z-index: 0;
+    bottom: 93.5em;
+    left: 7.1em;
+}
+
+
+/*.photoOverlap{
+  position: relative;
+
+  z-index: 999;
+}*/
+
+#Anna_Ari {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 3100px;
+}
+
+#imgaa1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imgaa2 {
+    object-fit: cover;
+    object-position: center;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+#Gabe {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 1800px;
+}
+
+#imgg1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imgg2 {
+    object-fit: cover;
+    object-position: 55% 0;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+#Apolonia {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 2300px;
+}
+
+#imga1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imga2 {
+    object-fit: cover;
+    object-position: center;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+#Holly {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 1900px;
+}
+
+#imgh1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imgh2 {
+    object-fit: cover;
+    object-position: 55% 0;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+#Emma {
+    background-image: linear-gradient(rgba(234, 226, 164, 0), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1), rgba(234, 226, 164, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 1900px;
+}
+
+#imge1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imge2 {
+    object-fit: cover;
+    object-position: center;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+#Hannah {
+    background-image: linear-gradient(rgba(255, 204, 153, 0), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1), rgba(255, 204, 153, 1));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 10%;
+    max-height: 2600px;
+}
+
+#imgha1 {
+    max-width: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+#imgha2 {
+    object-fit: cover;
+    object-position: 55% 0;
+    width: 600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-right: 12%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+}

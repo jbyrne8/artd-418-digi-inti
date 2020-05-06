@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/uif1vma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paralax.css">
+
+    <!-- libraries -->
+    <script src="libs/anime.min.js" type="text/javascript"></script>
+    <script src="libs/p5.js" type="text/javascript"></script>
+    <script src="libs/p5.dom.js" type="text/javascript"></script>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+      <source src="movies/bluesky.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar navbar-expand-lg fixed-bottom" id="navvie">
+      <div class="container-fluid justify-content-center">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#taylor">Taylor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#anna_ari">Anna & Ari</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gabe">Gabe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#apolonia">Apolonia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#holly">Holly</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#emma">Emma & Shua</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hannah">Hannah</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <svg style="position:fixed; z-index:10; padding-bottom: 80px;" viewBox="0 150 1920 280">
+    <style type="text/css">
+      .st0{fill:none;stroke:#FFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+    </style>
+    <path class="st0" d="M164,200c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14
+      c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14
+      c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14
+      c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14s16.9-14,33.9-14c16.9,0,16.9,14,33.9,14
+      c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14
+      c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14
+      c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14
+      c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14
+      c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14c16.9,0,16.9,14,33.9,14c16.9,0,16.9-14,33.9-14
+      c17,0,17,14,33.9,14s17-14,33.9-14"/>
+    </svg>
+
+    <div class="container-fluid child">
+
+
+
+        <div class="p1" style="font-size: 650%;">Champaign-Urbana:</div>
+        <div class="p2" style="font-size: 650%;">Coping with Pandemic Life</div>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="p3">
+                    This website tells the story of eight UIUC students in Spring 2020 through interviews and photos. They decided to stay on campus during a statewide stay at home order due to the COVID-19 pandemic. Created by Joanna Byrne for ARTD 418.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid child">
+        <div class="row" id="Taylor">
+          <a id="taylor"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Taylor</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2020</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> I love my family but being around them too long can get annoying. Since I've been in college for 4 years now, I’m used to not seeing my family all the time. I can text and call them any time so I don’t feel too distant from them. Urbana has been my home for many years.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> It took a lot of time but I eventually came around. I recently got Animal Crossing and it kept me motivated and kept my spirts up since the game is really happy. Also keeping up with filling out my planner and getting out of my pajamas everyday helped me set a new route. Overall I just need to make sure I am self-motivated and keeping up with my work.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>The grocery store has become my new hot spot. Other than that, making sure I have designated places for me to work and sleep in my own house is more important then ever.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>I have been slacking on social distancing sometimes, but most days I'm just at home. When I do meet up with friends, I make sure the group size is small. If I need to communicate with someone I text, call, and use social media. I do wear masks and have hand sanitizer when I am out in public.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>The virus has change everything about my plans. My graduation is canceled and possibly virtual, my summer internship is now virtual, and overall I’m not to sure what my next steps are going to be after my lease is up in August.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>I do get clouded with the negative news stories going around and I can’t help worrying. But I believe everything happens for a reason so I try to see the bright side. Distractions like video games and trash TV help keep my mind off things.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>I have found a joy in being alone. I guess you can say I’m a loner, but I really do enjoy this pause in life. It lets me focus on the things I’ve been putting off.
+                </p>
+                <p class="ques">ANYTHING ELSE YOU WOULD LIKE TO ADD?</p>
+                <p>I think now more than ever, it's important to check in on people. I found that checking in has really helped my relationships and it makes people feel valued. And we need that. We can get through this.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+                <img src="images/taylor_vert.jpg" alt="Taylor on her porch" id="imgt1">
+                <img src="images/taylor2.jpg" id="imgt2">
+                <div>
+                  <div class="rectangle1"></div>
+                  <div class="rectangle2"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Anna_Ari">
+          <a id="anna_ari"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Anna & Ari</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2021</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> ANNA: It was a hard decision to come back because I was home for spring break, hanging out with my family, and it was really nice because I had missed them a lot. My family lives in a one floor apartment, I share a room with my sister, and both of my parents were working from home so there wasn't really space to be a productive student there. I have a whole ass apartment here and I still have a job in the dining hall where I can get free meals.
+                </p>
+                <p>ARI: I chose to be on campus becauses being at home is very difficult. I'd rather be in school or at home with my parents, but I can't do both at the same time. There's always so much stuff going on around the house, it's hard to concentrate. It's also hard to get into a productive mindset, and I think here it's easier because we have more space. At home, I have my bedroom and that's it. I also thought my boyfriend would be coming down but he ditched last minute.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> ANNA: Ari and I have been making schedules for the week. We don't really adhere to them well, but having that sstructuree in our heads helps. Like even today, without my schedule for this week I slept through my first class. It helps me to visualize what I'll be doing for the week. I've been calling people a lot, checking in. Adjusting to the new normal... it doesn't really feel like a normal. Am I supposed to be adjusting to it? I don't know. Just trying to keep my spirits up and keeping myself distracted. Watching shows, consuming media, talking to people.
+                </p>
+                <p>ARI: It's kind of easy on the good days, but on the bad days I get really lazy and don't do anything. The adjustments we've been making are doing things I would never do. Like waking up and doing morning yoga, something I would not do, and going on walks around the neighborhood at 2pm, who does that. Basically integrating things into our schedule we would never normally do to create some normalcy.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p> ANNA: Definitely the outdoors have become important. They were already important, but they've become a thing where I can feel some kind of freedom. The whole thing right now I think with coping is that people feel a lack of control over the situation and it can't be helped. You just have to do what you have to do. Being outside gives me that little bit of freedom and I control where I go outside. Also I think this apartment is an important place for me, especially my room as my own place.
+                </p>
+                <p>ARI: I'd say historic Urbana has definitely gotten more important for me. Before, I saw it as a kind of cool neighborhood that Urbana kids live in, but seeing it in the daytime on these walks around the nieghb, when I'm usually in class or at home, has been really cool because you see families and neighborhood people with their dogs and stuff. I didn't realize how full of family life this neighborhood was, I thought it was just a college kid place. The neighborhood has transformed into something different for me now and it's cool because it makes me feel like I'm part of something bigger.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p> ANNA: I've been coping by just like calling people. And I have Ari here and he's an extrovert so he's always down to hang out with me.
+                </p>
+                <p>ARI: Lots of tv, videogames, facetiming friends, memes, Club Penguin, movies. I guess it's been nice having the time to do whatever I want, like catching up on tv. Immersing myself in art. I'm not making as much as I would like, but Anna and I did write a play last weeek. It's 5 minutes long. I keep getting the inspiration to make things but I don't have the resources to actually do those things.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p> ANNA: It's surprisingly not that different because I'm just at home now because none of my teachers have reduced the amount of work which is upsetting. I'm meeting with them at the same time as I used to so it's basically the same, obviously without the social aspect of school. I wish there was less work but it's fine. Most of my teachers are psychology and social work professors and I feel like them of all people would be like, "ah, mental health will be affected in this terrible situation," but no.
+                </p>
+                <p>ARI: I think school is a lot less important now, like I'm prioritizing it less which isn't a bad thing and spending more time on myself. Beforehand, it was like all school, all this one extracurricular, and then sleep. But now I have so much time to coast and I'm realizing that it's good to work on school, but it's not the biggest thing in my life.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p> ANNA: I'm a pretty pessimistic person in general, but I just know this will have an end, it won't be my entire life. That's not necessarily optimistic but I'm thinking practically. I'll just go back to living my life the way I was before when this is over in a year or so, and I don't think the world will end. As long as people stay inside.
+                </p>
+                <p>ARI: *laughs* It's hard to be optimistic. I realize I'm in a place with a lot of privilege to be able to just hang out with my roommate and have fun every day without having to worry about my health or my neighbors' health because there aren't that many cases here. It's hard to be optimistiic because I don't really see things getting any better soon.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p> ANNA: I've had time now, so I started reading the book Dune and it's really fun. Especially at work since there's hardly anyone in the dining halls. I love sci-fi and any activity that involves that is a fun time for me. I have like no desire to do anything at all and I have finals coming up, so these are two conflicting desires that I've been dealing with recently. I can't make myself do things because I'm me, and I know I don't want to do anything.
+                </p>
+                <p>ARI: Just like walking outside for the first time in a day, getting that breath of fresh air, then walking back inside and being like "I'm done now". And watering plants is fun, I never did that before because that was my other roommate's job.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/annaari1.jpg" id="imgaa1">
+              <img src="images/annaari3.jpg" id="imgaa2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Gabe">
+          <a id="gabe"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Gabe</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2020</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> It wasn't a hard choice to stay on campus. I was worried about being an asymptomatic carrier and going home could potentially get my parents sick. I also am still paying for my lease here, so I might as well stay here as long as I can. It's also easier to get work done here rather than at home.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> It's a weird adjustment because I'm basically acting like I'm 16 again, trying to do work when I can. I dunno, I've held myself to not feel too bad if I feel like I don't end up making good work or as much work.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>I think I appreciate the grocery store more now. I appreciate how easy it is to get things more than I used to. This entire thing has made me realize, though, that I "unappreciate" certain things, but I definitely unappreciate cruise ships now. I think we've evolved beyond the need for them. *laughs*
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>I have roommates which has been helpful. I grew up playing video games on the internet in an environment where we didn't hang out face to face. Like, after school we'd just go on Xbox Live and sit in a party chat and play for six hours.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>It's been a lot harder to do the work. There were like two weeks where I was super depressed or super anxious and I was just not sleeping. It was so hard to do things.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>It depends on the day.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>Not sure if this is unexpected, but I really appreciate the balcony attached to my room now. I like to go nap out there.
+                </p>
+                <br>
+                <p class="ques">ANYTHING ELSE YOU WOULD LIKE TO ADD?</p>
+                <p>Vote for Bernie Sanders. He's still on the ballot.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/gabe.jpg" id="imgg1">
+              <img src="images/gabe1.jpg" id="imgg2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Apolonia">
+          <a id="apolonia"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Apolonia</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2021</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> I decided to stay on campus because I prefer being independent and having my own space away from my family. I feel like I work better, I'm more productive in my own space. It was an easy decision to be here, but I still facetime my mom every day and I went home for Easter. Plus I'm still paying rent here.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> I guess I had a special case because a lot of people went home for spring break but I went to Texas on an Outdoor Adventure Club trip so I was kind of removed from society for a week. I didn't really have cell serivce, we were just sleeping outside in tents and hiking every day and we heard snippets of what was happening. When I got back, it became more real. The first two weeks were hard. I didn't have a routine and I was just logging into Zoom from my bed. I've been talking to my therapist more and she helped me plan out a routine so I wouldn't feel so like unmotivated and dead. So I have a routine to pretend that things are like how they were. I get up and make breakfast and coffee.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>Meadowbrook Park. The only person I've been interacting with has a car, and we'll drive there to go on a walk. It's really nice there. Most of my walks are around my neighborhood which is senior land and it's kind of gross, I'll see a few frat boys hanging out who are obviously not social distancing. That park is pretty special for me. Outside in general is special, I could not do this if I had to be inside all day.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>I get energy from other people and it's so hard not to be around them. Like I said, trying to do a routine and going on walks every day. I do a good job on trying to average 2 miles a day. I see some of my friends online for class and I've been on a few walks with my friend who lives down the block, but we don't hang out in a shared space.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>In the beginning I was kind of mad, like everyone, saying this is dumb. But I really appreciate our professors for trying. Like Angelica checks in with us and asks us how we're doing as people which is really nice. I'm kind of bummed about the fact that we might have online classes next semester, but I mean we gotta do what we gotta do. So I'm trying to structure my schedule so it's an easy transition if necessary. If worse comes to worst, I'll do part time because I don't see the point since we have only two required design classes.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>*laughs* I think so. I cried the other night because I was so lonely, but I found out my roommate is coming back so I think that will help. It's just hard not interacting with people. I'm trying to stay positive every day. Usually I like going on walks to think and reflect, but if being alone with my thoughts is too much, I  listen to podcasts now and it's a fun way to hear other people talking. I'm listening to one about advertising and people that are I guess "disrupting" in a positive way in their fields. Stuff like that helps. I eat a lot now, I'm not sure if that's a good or bad thing, but my schedule was so busy I didn't prioritize it. I think slowing down is letting me appreciate things more, like social interaction. And food.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>Life slowed down for me a lot which I think I needed because I was so stressed from trying to do a million things at once. And I'm still able to work which is a blessing, I know a lot of people aren't and a lot of my friends have been laid off. It makes me happy and excited for the future because I have faith in graphic design and design in general.
+                </p>
+                <br>
+                <p class="ques">ANYTHING ELSE YOU WOULD LIKE TO ADD?</p>
+                <p>I think now more than ever, it's important to check in on people. I found that checking in has really helped my relationships and it makes people feel valued. And we need that. We can get through this.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/apolonia.jpg" id="imga1">
+              <img src="images/apolonia1.jpg" id="imga2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Holly">
+          <a id="holly"></a>
+            <div class="col-5" id="info">
+
+                <div class="name" style="font-size: 350%;">Holly</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2020</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> I love my family but being around them too long can get annoying. Since I've been in college for 4 years now, I’m used to not seeing my family all the time. I can text and call them any time so I don’t feel too distant from them. Urbana has been my home for many years.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> It took a lot of time but I eventually came around. I recently got Animal Crossing and it kept me motivated and kept my spirts up since the game is really happy. Also keeping up with filling out my planner and getting out of my pajamas everyday helped me set a new route. Overall I just need to make sure I am self-motivated and keeping up with my work.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>The grocery store has become my new hot spot. Other than that, making sure I have designated places for me to work and sleep in my own house is more important then ever.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>I have been slacking on social distancing sometimes, but most days I'm just at home. When I do meet up with friends, I make sure the group size is small. If I need to communicate with someone I text, call, and use social media. I do wear masks and have hand sanitizer when I am out in public.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>The virus has change everything about my plans. My graduation is canceled and possibly virtual, my summer internship is now virtual, and overall I’m not to sure what my next steps are going to be after my lease is up in August.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>I do get clouded with the negative news stories going around and I can’t help worrying. But I believe everything happens for a reason so I try to see the bright side. Distractions like video games and trash TV help keep my mind off things.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>I have found a joy in being alone. I guess you can say I’m a loner, but I really do enjoy this pause in life. It lets me focus on the things I’ve been putting off.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/holly.jpg" id="imgh1">
+              <img src="images/holly1.jpg" id="imgh2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Emma">
+          <a id="emma"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Emma & Shua</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2020</div>
+                <br>
+                <br>
+                <p style="font-size: 0.75em; letter-spacing: 1px; font-style: italic;">{ INTERVIEW IS ONLY EMMA }</p>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p> *laughs* The decision was very easy because I didn't want to be at home at my parents' house. And I pay rent anyways.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p> I guess I've adjusted okay. I leave my house and I'm kind of going insane but it's fine, it's fine. It's kinda gotten to the point where I'm used to it now and I do all my things of the day.  I hang out, and I do whatever I want.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>Yeah, I guess so. Leaving the house I'm like "ooh I'm gonna go outside." Going outside is like an activity now. It was before, but now it's was more like "I went outside today, woohoo." Also, the grocery store. Going to the grocery store is like a really weird place to be these days.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>*laughs* I've been drinking a lot of wine, smoking weed, making art, watching tv, making food, cooking a lot.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>I'm mad, I'm mad. It sucks because I didn't really get, like, goodbyes or a last hurrah at all. Which is just sad because there's so many people that I went to class with or just see here that I'll probably never get a chance to say goodbye to or see ever again unless I run into them or actively make it happen. It sucks not being able to say goodbye, and it sucks that graduation isn't really happening. It's like the second part of the spring semester was gonna be the big blowout, you know? But now it's not. And our BFA show got canceled which is really upsetting because I've been working on my project for the entire year and it's just not happening. The're like "oh, we're putting it online," but that's bullshit because I've been working on an installation for like months that just got canclled so... I'm angry. Upset. Sad. Mad. I dunno, nothing is serious to me right now.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>I do get clouded with the negative news stories going around and I can’t help worrying. But I believe everything happens for a reason so I try to see the bright side. Distractions like video games and trash TV help keep my mind off things.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>I have found a joy in being alone. I guess you can say I’m a loner, but I really do enjoy this pause in life. It lets me focus on the things I’ve been putting off.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/emma.jpg" id="imge1">
+              <img src="images/emma1.jpg" id="imge2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid child" id="stroke">
+        <div class="row" id="Hannah">
+          <a id="hannah"></a>
+            <div class="col-5" id="info">
+                <div class="name" style="font-size: 350%;">Hannah</div>
+                <div style="text-align: left; letter-spacing: 3px; padding-top: 1%; font-kerning: normal; font-size: 0.8em;">UIUC CLASS OF 2020</div>
+                <br>
+                <br>
+                <p class="ques">WHY DID YOU DECIDE TO STAY ON CAMPUS?</p>
+                <p>I guess I decided to stay on campus because I'm used to living here during the semester so it helps me with my routine and it would be less stressful. I think being at home would have thrown everything out of whack and made everything more stressful. Staying with my parents for a whole semester... I haven't done that in a while. *laughs*
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU ADJUSTED TO OUR NEW NORMAL?</p>
+                <p>It was really hard at first because things were so uncertain and there wasn't a definite answer to when things would end and I was really stressed. But now, it's kind of become normal and I've figured out how to keep myself sane and what to do to keep a rountine, so I feel less stressed out now. Also now we kind of know the worst case scenarios for the disease and we have more information about it, so it's less scary even if some of the information was more scary that we expected.
+                </p>
+                <br>
+                <p class="ques">HAVE CERTAIN PLACES BECOME MORE IMPORTANT TO YOU?</p>
+                <p>I'm the president of a club on campus, Women of Pride, and it's been hard to figure out how to do meetings, but it's been cool to see how that translates over the internet, to be able to create a space on Zoom for people to share experiences, talk, and play games. So it's been cool to see how an internet space can replace a physical space for connection. My room has also always been important to me, but it's more important to make myself feel comfortable at home and do little things. Like water my plants and clean my room.
+                </p>
+                <br>
+                <p class="ques">HOW HAVE YOU BEEN COPING PRACTICING SOCIAL ISOLATION?</p>
+                <p>I have been reaching out to people when they need social connection. I live with two of my friends so it's been really helpful to talk to them and have a similar experience. Also, I've been biking around and getting outside to get out the extra energy I'd be using walking around campus all day. *laughs* Biking, talking to my roommates, doing art, and watching all the tv shows I wasn't able to watch before.
+                </p>
+                <br>
+                <p class="ques">HOW HAS CORONAVIRUS AFFECTED THIS  SEMESTER FOR YOU?</p>
+                <p>It hasn't impacted my semester a lot because I'm a part time student right now, so it kind of just feels like the summer where Urbana is really empty and I'm just taking a couple of classes. It hasn't really impacted my academics too much, but there is a difference. It's definitely harder to do school online. For graduation, I don't know. I was looking forward to it and it's great to commemorate how hard we've worked, but I guess I don't find so much significance in a final ceremony compared to having all these memories and knowing I worked really harded. Having something to celebrate at the end is important, but it's not the end of the world for me to miss because I can celebrate on my own or with my friends instead of being with like a thousand people in a stadium. *laughs*</p>
+                <p>
+                But one thing I'm really missing is Lav Grad, Lavender Graduation, which is held by the LGBT Resource Center. Basically it's just a ceremony to honor queeer students at the end of the year, hang out with all the friends you've made, and get honored for the work you've done on campus. That definitely has more significance to me than my graduation ceremony because it's so great to be able to share that with people I've worked really hard with and get recognized for that.
+                </p>
+                <br>
+                <p class="ques">ARE YOU STAYING OPTIMISTIC?</p>
+                <p>Yeah, I'm actually taking an American medical history class which is super timely and it's helped me stay optimistic because we've beeen through pandemics and disease outbreaks before. So knowing we've been through shitty things makes me feel optimistic that we'll get through this other shitty thing.
+                </p>
+                <br>
+                <p class="ques">HAVE YOU FOUND ANY UNEXPECTED JOYS WHILE BEING IN QUARANTINE?</p>
+                <p>Probably just being able to focus on myself and on my hobbies that I haven't really been able to do because outside quarantine, there are so many things going on. Public events, club things, I don't know, a lot of different activities to do. So I'm doing things that I've wanted to put more time into, like biking around Urbana. I started painting and all sorts of things I feel really grateful. This does suck, but it gave me some time I don't normally have.
+                </p>
+                <br>
+                <p class="ques">ANYTHING ELSE YOU WOULD LIKE TO ADD?</p>
+                <p>It's made me wonder what's going to happen when it's over and everyone is used to being able to slow down because things are closed and some poeple aren't working. I'm wondering if it will make us rethink our lives. I'm not sure if it will, because I think we'll get back into the routine really fast again, but I hope that it shifts things. I hope it makes people reconsider having personal time and family time and friend time over just valuing a work routine and staying busy.
+                </p>
+            </div>
+            <div class="col-7 text-right" id="imgcol">
+              <img src="images/hannah.jpg" id="imgha1">
+              <img src="images/hannah1.jpg" id="imgha2">
+              <div>
+                <div class="rectangle1"></div>
+                <div class="rectangle2"></div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- codigo javaScript -->
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>

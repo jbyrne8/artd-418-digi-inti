@@ -51,7 +51,7 @@ a {
     text-decoration: none;
 }
 #navvie{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
   padding-bottom: 2vh;
 }
 .navbar-nav>li {
